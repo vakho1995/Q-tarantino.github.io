@@ -1,0 +1,18 @@
+%hover-text{
+    display: block;
+    opacity: 1;
+    font-family: 'Pacifico';
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+}
+%icone-nav{
+    font-size: $size01;
+    margin-right: $size01;
+    color: $color01;
+}
+%text-nav{
+    font-size: $size02;
+    font-family: 'Pacifico';
+    color: $color01;
+    opacity: 0;
+}
