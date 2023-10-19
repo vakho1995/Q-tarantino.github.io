@@ -77,10 +77,17 @@
     margin-top: 20px;
     border-radius: 25px;
     padding: 15px;
+    @media(max-width:1530px){
+        max-width: 851px;
+        width: 100%;
+    }
     .content{
         .space{
             max-width: 1000px;
             height: 260px;
+            @media(max-width:650px){
+                height: 140px;
+            }
         }
         position: relative;
         @include d-flex(column, center, center);
@@ -90,62 +97,149 @@
             top:-255px;
             left:50%;
             translate:-50%;
+            @media(max-width:650px){
+                width: 190px;
+                top:-134px;
+            }
             .title-01{
                 text-align: center;
                 font-size: 80px;
                 color: #FFF731;
                 font-family: 'Busorama';
+                @media(max-width:650px){
+                    font-size: 40px;
+                }
             }
         }
         .films{
             display: flex;
             flex-direction: column;
-            .film-container01{
-                display: flex;
-                justify-content: space-around;
-                margin-bottom: 20px;
+            .film-container03, .film-container04{
+                .film-08-resp, .film-07-resp{
+                    @media(max-width:650px){
+                        margin-top: 20px;
+                    }
+                }
             }
-            .film{
-                background-color: #FFF731;
-                max-width:200px;
-                width: 100%;
-                padding: 15px;
-                border-radius: 25px;
-                
-                @include d-flex(flex, center, center);
-                flex-direction: column;
-                .img{
-                    border-radius:25px;
-                    width: 150px;
-                    height: 300px;
-                    margin-bottom: 20px;
+            .film-container03{
+                @media(max-width:650px){
+                    margin-bottom: 0;
                 }
-                p{
-                    text-align: center;
-                    font-family: 'Anton';
-                    width: 100%;
-                    font-size: 20px;
-                    margin-bottom: 20px;
+            }
+            .film-container01, .film-container02, .film-container03, .film-container04{
+                @extend%film-container;
+                @media(max-width:650px){
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
-                .link-film{
-                    max-width: 100px;
+                &:nth-child(3){
+                    @media(min-width:900px){
+                        display: none;
+                    }
+                }
+                &:nth-child(4){
+                    @media(min-width:700px){
+                        display: none;
+                    }
+                }
+            }
+                .empty{
+                    max-width: 200px;
                     width: 100%;
-                    .watch-butt{
+                    @media(max-width:700px){
+                        display: none;
+                    }
+                }
+                .film-03-resp-2{
+                    @media(max-width:900px){
+                        display: block;
+                    }
+                    display: none;
+                    @extend%film;
+                    .img{
+                        @extend%img;
+                    }
+                    p{
+                        @extend%p;
+                    }
+                    .link-film{
+                        @extend%link-film;
+                    }
+                }
+                .film-03-resp, .film-04-resp, .film-07-resp, .film-08-resp{
+                    
+                    &:nth-child(4){
+                        @media(max-width:650px){
+                            margin-bottom: 20px;
+                        }
+                    }
+                    &:nth-child(3){
+                        @media(max-width:900px){
+                            display: none;
+                        }
+                    }
+                    &:nth-child(1){
+                        @media(max-width:900px){
+                            display: none;
+                        }
+                        
+                    }
+                    @extend%film;
+                    .img{
+                        @extend%img;
+                    }
+                    p{
+                        @extend%p;
+                    }
+                    .link-film{
+                        @extend%link-film;
+                    }
+                }
+                .film-01, .film-02, .film-03, .film-04, .film-05, .film-06, .film-07, .film-08{
+                    &:nth-child(2){
+                        @media(max-width:650px){
+                            margin-top: 20px;
+                        }
+                    }
+                    &:nth-child(4){
+                        @media(max-width:900px){
+                            display: none;
+                        }
+                    }
+                    &:nth-child(3){
+                        @media(max-width:700px){
+                            display: none;
+                        }
+                    }
+                    @extend%film;
+                    @include d-flex(flex, center, center);
+                    flex-direction: column;
+                    .img{
+                        @extend%img;
+                    }
+                    p{
+                        @extend%p;
+                    }
+                    .link-film{
+                        max-width: 100px;
                         width: 100%;
-                        background-color: #000;
-                        color: #fff;
-                        border-style: none;
-                        border-radius: 25px;
-                        height: 30px;
-                        font-family: 'Busorama';
-                        font-size: 25px;
-                        &:hover{
-                            background-color: #fff;
-                            color: #C81103;
-
+                        .watch-butt{
+                            width: 100%;
+                            background-color: #000;
+                            color: #fff;
+                            border-style: none;
+                            border-radius: 25px;
+                            height: 30px;
+                            font-family: 'Busorama';
+                            font-size: 25px;
+                            &:hover{
+                                background-color: #fff;
+                                color: #C81103;
                         }
                     }
                 }
+                
             }
         }
 

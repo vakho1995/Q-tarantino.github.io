@@ -84,6 +84,58 @@ a {
   opacity: 0;
 }
 
+.container01 .content .films .film-container01, .container01 .content .films .film-container02, .container01 .content .films .film-container03, .container01 .content .films .film-container04 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.container01 .content .films .film-01, .container01 .content .films .film-02, .container01 .content .films .film-03, .container01 .content .films .film-04, .container01 .content .films .film-05, .container01 .content .films .film-06, .container01 .content .films .film-07, .container01 .content .films .film-08, .container01 .content .films .film-03-resp, .container01 .content .films .film-04-resp, .container01 .content .films .film-07-resp, .container01 .content .films .film-08-resp, .container01 .content .films .film-03-resp-2 {
+  background-color: #FFF731;
+  max-width: 200px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.container01 .content .films .film-01 .img, .container01 .content .films .film-02 .img, .container01 .content .films .film-03 .img, .container01 .content .films .film-04 .img, .container01 .content .films .film-05 .img, .container01 .content .films .film-06 .img, .container01 .content .films .film-07 .img, .container01 .content .films .film-08 .img, .container01 .content .films .film-03-resp .img, .container01 .content .films .film-04-resp .img, .container01 .content .films .film-07-resp .img, .container01 .content .films .film-08-resp .img, .container01 .content .films .film-03-resp-2 .img {
+  border-radius: 25px;
+  width: 150px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.container01 .content .films .film-01 p, .container01 .content .films .film-02 p, .container01 .content .films .film-03 p, .container01 .content .films .film-04 p, .container01 .content .films .film-05 p, .container01 .content .films .film-06 p, .container01 .content .films .film-07 p, .container01 .content .films .film-08 p, .container01 .content .films .film-03-resp p, .container01 .content .films .film-04-resp p, .container01 .content .films .film-07-resp p, .container01 .content .films .film-08-resp p, .container01 .content .films .film-03-resp-2 p {
+  text-align: center;
+  font-family: "Anton";
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container01 .content .films .film-03-resp .link-film, .container01 .content .films .film-04-resp .link-film, .container01 .content .films .film-07-resp .link-film, .container01 .content .films .film-08-resp .link-film, .container01 .content .films .film-03-resp-2 .link-film {
+  max-width: 100px;
+  width: 100%;
+}
+.container01 .content .films .film-03-resp .link-film .watch-butt, .container01 .content .films .film-04-resp .link-film .watch-butt, .container01 .content .films .film-07-resp .link-film .watch-butt, .container01 .content .films .film-08-resp .link-film .watch-butt, .container01 .content .films .film-03-resp-2 .link-film .watch-butt {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border-style: none;
+  border-radius: 25px;
+  height: 30px;
+  font-family: "Busorama";
+  font-size: 25px;
+}
+.container01 .content .films .film-03-resp .link-film .watch-butt:hover, .container01 .content .films .film-04-resp .link-film .watch-butt:hover, .container01 .content .films .film-07-resp .link-film .watch-butt:hover, .container01 .content .films .film-08-resp .link-film .watch-butt:hover, .container01 .content .films .film-03-resp-2 .link-film .watch-butt:hover {
+  background-color: #fff;
+  color: #C81103;
+}
+
 @font-face {
   font-family: "Pacifico";
   src: url("Pacifico-Regular.eot");
@@ -182,6 +234,12 @@ a {
   border-radius: 25px;
   padding: 15px;
 }
+@media (max-width: 1530px) {
+  .container01 {
+    max-width: 851px;
+    width: 100%;
+  }
+}
 .container01 .content {
   position: relative;
   display: column;
@@ -196,6 +254,11 @@ a {
   max-width: 1000px;
   height: 260px;
 }
+@media (max-width: 650px) {
+  .container01 .content .space {
+    height: 140px;
+  }
+}
 .container01 .content .title-wrap {
   position: absolute;
   width: 400px;
@@ -203,11 +266,22 @@ a {
   left: 50%;
   translate: -50%;
 }
+@media (max-width: 650px) {
+  .container01 .content .title-wrap {
+    width: 190px;
+    top: -134px;
+  }
+}
 .container01 .content .title-wrap .title-01 {
   text-align: center;
   font-size: 80px;
   color: #FFF731;
   font-family: "Busorama";
+}
+@media (max-width: 650px) {
+  .container01 .content .title-wrap .title-01 {
+    font-size: 40px;
+  }
 }
 .container01 .content .films {
   display: -webkit-box;
@@ -218,20 +292,73 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.container01 .content .films .film-container01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 20px;
+@media (max-width: 650px) {
+  .container01 .content .films .film-container03 .film-08-resp, .container01 .content .films .film-container03 .film-07-resp, .container01 .content .films .film-container04 .film-08-resp, .container01 .content .films .film-container04 .film-07-resp {
+    margin-top: 20px;
+  }
 }
-.container01 .content .films .film {
-  background-color: #FFF731;
+@media (max-width: 650px) {
+  .container01 .content .films .film-container03 {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container01 .content .films .film-container01, .container01 .content .films .film-container02, .container01 .content .films .film-container03, .container01 .content .films .film-container04 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 900px) {
+  .container01 .content .films .film-container01:nth-child(3), .container01 .content .films .film-container02:nth-child(3), .container01 .content .films .film-container03:nth-child(3), .container01 .content .films .film-container04:nth-child(3) {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .container01 .content .films .film-container01:nth-child(4), .container01 .content .films .film-container02:nth-child(4), .container01 .content .films .film-container03:nth-child(4), .container01 .content .films .film-container04:nth-child(4) {
+    display: none;
+  }
+}
+.container01 .content .films .empty {
   max-width: 200px;
   width: 100%;
-  padding: 15px;
-  border-radius: 25px;
+}
+@media (max-width: 700px) {
+  .container01 .content .films .empty {
+    display: none;
+  }
+}
+.container01 .content .films .film-03-resp-2 {
+  display: none;
+}
+@media (max-width: 900px) {
+  .container01 .content .films .film-03-resp-2 {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .container01 .content .films .film-03-resp:nth-child(4), .container01 .content .films .film-04-resp:nth-child(4), .container01 .content .films .film-07-resp:nth-child(4), .container01 .content .films .film-08-resp:nth-child(4) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .container01 .content .films .film-03-resp:nth-child(3), .container01 .content .films .film-04-resp:nth-child(3), .container01 .content .films .film-07-resp:nth-child(3), .container01 .content .films .film-08-resp:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .container01 .content .films .film-03-resp:nth-child(1), .container01 .content .films .film-04-resp:nth-child(1), .container01 .content .films .film-07-resp:nth-child(1), .container01 .content .films .film-08-resp:nth-child(1) {
+    display: none;
+  }
+}
+.container01 .content .films .film-01, .container01 .content .films .film-02, .container01 .content .films .film-03, .container01 .content .films .film-04, .container01 .content .films .film-05, .container01 .content .films .film-06, .container01 .content .films .film-07, .container01 .content .films .film-08 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,24 +373,26 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.container01 .content .films .film .img {
-  border-radius: 25px;
-  width: 150px;
-  height: 300px;
-  margin-bottom: 20px;
+@media (max-width: 650px) {
+  .container01 .content .films .film-01:nth-child(2), .container01 .content .films .film-02:nth-child(2), .container01 .content .films .film-03:nth-child(2), .container01 .content .films .film-04:nth-child(2), .container01 .content .films .film-05:nth-child(2), .container01 .content .films .film-06:nth-child(2), .container01 .content .films .film-07:nth-child(2), .container01 .content .films .film-08:nth-child(2) {
+    margin-top: 20px;
+  }
 }
-.container01 .content .films .film p {
-  text-align: center;
-  font-family: "Anton";
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 20px;
+@media (max-width: 900px) {
+  .container01 .content .films .film-01:nth-child(4), .container01 .content .films .film-02:nth-child(4), .container01 .content .films .film-03:nth-child(4), .container01 .content .films .film-04:nth-child(4), .container01 .content .films .film-05:nth-child(4), .container01 .content .films .film-06:nth-child(4), .container01 .content .films .film-07:nth-child(4), .container01 .content .films .film-08:nth-child(4) {
+    display: none;
+  }
 }
-.container01 .content .films .film .link-film {
+@media (max-width: 700px) {
+  .container01 .content .films .film-01:nth-child(3), .container01 .content .films .film-02:nth-child(3), .container01 .content .films .film-03:nth-child(3), .container01 .content .films .film-04:nth-child(3), .container01 .content .films .film-05:nth-child(3), .container01 .content .films .film-06:nth-child(3), .container01 .content .films .film-07:nth-child(3), .container01 .content .films .film-08:nth-child(3) {
+    display: none;
+  }
+}
+.container01 .content .films .film-01 .link-film, .container01 .content .films .film-02 .link-film, .container01 .content .films .film-03 .link-film, .container01 .content .films .film-04 .link-film, .container01 .content .films .film-05 .link-film, .container01 .content .films .film-06 .link-film, .container01 .content .films .film-07 .link-film, .container01 .content .films .film-08 .link-film {
   max-width: 100px;
   width: 100%;
 }
-.container01 .content .films .film .link-film .watch-butt {
+.container01 .content .films .film-01 .link-film .watch-butt, .container01 .content .films .film-02 .link-film .watch-butt, .container01 .content .films .film-03 .link-film .watch-butt, .container01 .content .films .film-04 .link-film .watch-butt, .container01 .content .films .film-05 .link-film .watch-butt, .container01 .content .films .film-06 .link-film .watch-butt, .container01 .content .films .film-07 .link-film .watch-butt, .container01 .content .films .film-08 .link-film .watch-butt {
   width: 100%;
   background-color: #000;
   color: #fff;
@@ -273,7 +402,7 @@ a {
   font-family: "Busorama";
   font-size: 25px;
 }
-.container01 .content .films .film .link-film .watch-butt:hover {
+.container01 .content .films .film-01 .link-film .watch-butt:hover, .container01 .content .films .film-02 .link-film .watch-butt:hover, .container01 .content .films .film-03 .link-film .watch-butt:hover, .container01 .content .films .film-04 .link-film .watch-butt:hover, .container01 .content .films .film-05 .link-film .watch-butt:hover, .container01 .content .films .film-06 .link-film .watch-butt:hover, .container01 .content .films .film-07 .link-film .watch-butt:hover, .container01 .content .films .film-08 .link-film .watch-butt:hover {
   background-color: #fff;
   color: #C81103;
 }

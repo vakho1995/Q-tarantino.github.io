@@ -16,3 +16,48 @@
     color: $color01;
     opacity: 0;
 }
+%film-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+%film{
+    background-color: #FFF731;
+    max-width:200px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+}
+%img{
+    border-radius:25px;
+    width: 150px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+%p{
+    text-align: center;
+    font-family: 'Anton';
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+%link-film{
+    max-width: 100px;
+    width: 100%;
+    .watch-butt{
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        border-style: none;
+        border-radius: 25px;
+        height: 30px;
+        font-family: 'Busorama';
+        font-size: 25px;
+        &:hover{
+            background-color: #fff;
+            color: #C81103;
+        }
+    }
+}
